@@ -11,7 +11,7 @@ let login = function () {
         for (let i = 0; i < UserName[0].length; i++) {
             if (userName === UserName[0][i] && password === UserName[1][i]) {
                 alert("Đăng nhập thành công");
-                return window.location = "index.html"
+                return window.location = "new.html"
             }
         }
 
