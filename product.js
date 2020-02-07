@@ -14,6 +14,7 @@ let login = function () {
                 return window.location = "index.html"
             }
         }
+
     }
 };
 
