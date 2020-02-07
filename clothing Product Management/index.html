@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Managament</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="product.js"></script>
+
+</head>
+<body>
+<div>
+    <img src="images/Laurel-Header.jpg" width="800px" height="250px">
+    <h2 style="color: darkmagenta"><b>QUẢN LÍ SẢN PHẨM</b></h2>
+    <a href="#" onclick="openDialog()">Thêm sản phẩm</a>
+    <a href="#" onclick="appendHeader(); refreshList()">Cập nhật lại danh mục sản phẩm</a>
+
+    <table id="hidden-content" class="hidden-table table-custom ">
+        <tbody>
+        <tr>
+            <th>STT</th>
+            <th>Mã sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Hình ảnh</th>
+            <th>Nhà sản xuất</th>
+            <th>Mô tả sản phẩm</th>
+            <th>Giá bán</th>
+            <th>Tình trạng hàng hoá</th>
+            <th>Thao tác</th>
+        </tr>
+        </tbody>
+    </table>
+
+    <table id="content" class="table-custom">
+        <tbody>
+        <tr>
+            <th>STT</th>
+            <th>Mã sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Hình ảnh</th>
+            <th>Nhà sản xuất</th>
+            <th>Mô tả sản phẩm</th>
+            <th>Giá bán</th>
+            <th>Tình trạng hàng hoá</th>
+            <th>Thao tác</th>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<div id="dialog">
+    <h3 style="text-align: center"><b>DANH MỤC SẢN PHẨM</b></h3>
+
+    <table>
+        <tr>
+            <td>STT</td>
+            <td>
+                <input type="text" id="number" size="50">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mã sản phẩm</td>
+            <td>
+                <input type="text" id="id" size="50">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tên sản phẩm</td>
+            <td>
+                <input type="text" id="fullName" size="50">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Hình ảnh</td>
+            <td>
+                <input type="text" id="picture" size="50">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Nhà sản xuất</td>
+            <td>
+                <select id="producer">
+                    <option value="Đức">Đức</option>
+                    <option value="Việt Nam">Việt Nam</option>
+                    <option value="Thái Lan">Thái Lan</option>
+                    <option value="Nhật Bản">Nhật Bản</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mô tả sản phẩm</td>
+            <td>
+                <textarea rows="2" cols="48" id="describe"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Giá bán</td>
+            <td>
+                <input type="text" id="price" size="50">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tình trạng hàng hoá</td>
+            <td>
+                <input type="radio" name="status" value="Còn Hàng">Còn Hàng
+                <input type="radio" name="status" value="Hết Hàng">Hết Hàng
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button class="button1" onclick="addProduct()">Nhập</button>
+            </td>
+            <td>
+                <button class="button1" onclick="closeDialog()">Đóng</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+#dialog {
+    border: 1px gray solid;
+    background-color: blanchedalmond;
+    width: 800px;
+    position: absolute;
+    display: none;
+    color: darkorchid;
+    font-size: 20px;
+}
+
+.hidden-table {
+    display: none;
+}
+
+
+th, td {
+    border: 1px solid;
+
+}
+
+.table-custom {
+    border: 1px solid;
+    table-layout: fixed;
+    width: 800px;
+    background-color: palegreen;
+    text-align: center;
+}
+
+.td {
+    width: 200px;
+    height: 30px;
+    border-radius: 70px;
+    background-color: blanchedalmond;
+    font-size: 15px;
+    text-align: center;
+}
+
+.button {
+    width: 200px;
+    height: 30px;
+    border-radius: 70px;
+    background-color: greenyellow;
+    font-size: 15px;
+    text-align: center;
+}
+
+.button1 {
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: greenyellow;
+    font-size: 15px;
+    text-align: center;
+}
